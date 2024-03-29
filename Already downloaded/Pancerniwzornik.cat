@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="713e-3a21-82fe-022f" name="Pancerni V2" revision="4" battleScribeVersion="2.03" authorName="kch" library="false" gameSystemId="f8e8-54ee-18f5-565b" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <publications>
+    <publication id="1df9-7d0b-7797-72fe" name="Pancerni - escalation" shortName="Pancerni" publisher="Pancerni rulebook" publicationDate="2024"/>
+  </publications>
+  <categoryEntries>
+    <categoryEntry id="414e-e365-b993-a24e" name="Kompania" hidden="false"/>
+    <categoryEntry id="8d5a-fe3c-7dbd-7ec1" name="Pluton" hidden="false"/>
+    <categoryEntry id="63b7-33a2-746e-b1ee" name="Drużyna" hidden="false"/>
+    <categoryEntry id="7442-2f83-06a6-5bc6" name="Sekcja" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="aa08-9f9b-6f7e-ea49" name="Pancerni" publicationId="fcb5-521d-979f-2f8f" hidden="false">
+      <categoryLinks>
+        <categoryLink id="6d77-11b7-68f6-80fd" name="Piechota" hidden="false" targetId="92a3-aea5-46f9-1d72" primary="false"/>
+        <categoryLink id="ba29-d7e6-ac41-ee0c" name="Pojazdy" publicationId="1df9-7d0b-7797-72fe" hidden="false" targetId="f506-bed1-f370-b192" primary="false"/>
+        <categoryLink id="e827-2154-f56f-1102" name="Pluton" hidden="false" targetId="8d5a-fe3c-7dbd-7ec1" primary="false"/>
+        <categoryLink id="577f-cd13-c117-fc3b" name="Drużyna" hidden="false" targetId="63b7-33a2-746e-b1ee" primary="false"/>
+        <categoryLink id="5a11-7ae7-2cb9-a782" name="Kompania" hidden="false" targetId="414e-e365-b993-a24e" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="ec2b-4cea-d27b-1253" name="Chuj dupa gówno" hidden="false">
+      <categoryLinks>
+        <categoryLink id="d6dd-d763-47ef-a36f" name="Piechota" hidden="false" targetId="92a3-aea5-46f9-1d72" primary="false"/>
+        <categoryLink id="3d0a-7b4b-1c8a-f636" name="Pojazdy" hidden="false" targetId="f506-bed1-f370-b192" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="1902-06a5-d538-ced7" name="Jakaś drużyna etc" publicationId="fcb5-521d-979f-2f8f" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="76fe-81b1-3379-999b" name="APC &quot;cegła&quot;" hidden="false" targetId="120c-283c-41f4-d9f4" type="profile"/>
+        <infoLink id="306e-44af-f4bf-9341" name="Pancerny" hidden="false" targetId="ae2a-3684-30f2-078b" type="profile"/>
+        <infoLink id="2094-aa8b-070c-2bdd" name="dowódca drużyny" publicationId="fcb5-521d-979f-2f8f" hidden="false" targetId="660e-30e4-0196-d40e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="29ed-fb95-4615-9423" name="Piechota" hidden="false" targetId="92a3-aea5-46f9-1d72" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="ptk" typeId="7921-831d-f13f-9469" value="270.0"/>
+        <cost name="Punkty walki wywiadowczej" typeId="9f0c-d0a4-ea60-16c3" value="0.0"/>
+        <cost name="Punkty dowodzenia" typeId="eb58-26dd-90a1-c631" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="d39f-f432-f6a7-58f9" name="Pluton piechoty pancernych" hidden="false" collective="false" import="true" targetId="901d-3184-b3a3-9863" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="cb7e-d510-1d7b-abe8" name="Pluton" hidden="false" targetId="8d5a-fe3c-7dbd-7ec1" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="ptk" typeId="7921-831d-f13f-9469" value="80.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="598f-37b2-2106-c82f" name="CHUJA A NIE APC" hidden="false" collective="false" import="true" targetId="4bbc-0b3c-ccb2-796b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="81ad-3e06-f514-0f2f" name="Pojazdy" hidden="false" targetId="f506-bed1-f370-b192" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="ptk" typeId="7921-831d-f13f-9469" value="80.0"/>
+      </costs>
+    </entryLink>
+    <entryLink id="116f-0c35-9e11-519d" name="xDDD" hidden="false" collective="false" import="true" targetId="689b-0f8c-3844-fb43" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="3de6-cafc-2223-6a4a" name="Systemy namierzania " publicationId="1df9-7d0b-7797-72fe" hidden="false">
+      <description>Akcja Namierzanie - Jeśli widzisz  jednostkę przeciwnika to możesz ją namierzyć. Namierzona jednostka może być ostrzelana z broni z zasadą &quot;strzelanie pośrednie&quot; bez kar wynikających z tej zasady. </description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="901d-3184-b3a3-9863" name="Pluton piechoty pancernych" publicationId="fcb5-521d-979f-2f8f" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="c36c-da10-dbcd-f35b" name="dowódca plutonu" hidden="false" targetId="2bc8-decb-903c-9540" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c274-fd26-bbe2-63b3" name="Pluton" hidden="false" targetId="8d5a-fe3c-7dbd-7ec1" primary="false"/>
+        <categoryLink id="f7d4-8521-26c4-c06b" name="Piechota" hidden="false" targetId="92a3-aea5-46f9-1d72" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3b31-199b-7d17-77ff" name="Pluton piechoty pancernych" publicationId="1df9-7d0b-7797-72fe" hidden="false" collective="false" import="true" targetId="901d-3184-b3a3-9863" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99de-2956-eb44-1fa4" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="ptk" typeId="7921-831d-f13f-9469" value="15.0"/>
+        <cost name="Punkty walki wywiadowczej" typeId="9f0c-d0a4-ea60-16c3" value="0.0"/>
+        <cost name="Punkty dowodzenia" typeId="eb58-26dd-90a1-c631" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4bbc-0b3c-ccb2-796b" name="CHUJA A NIE APC" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="ce5c-c15d-7112-eb5a" name="APC &quot;cegła&quot;" hidden="false" targetId="120c-283c-41f4-d9f4" type="profile"/>
+        <infoLink id="0703-edd9-68dd-fb62" name="Karabinek &quot;Czyściciel&quot;" hidden="false" targetId="bade-1276-815a-2e61" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="409c-da9f-da9c-500b" name="Pojazdy" hidden="false" targetId="f506-bed1-f370-b192" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9201-9a90-add0-f998" name="Broń Ciężka" hidden="false" collective="false" import="true" targetId="b0ea-703c-7ca6-5349" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="ptk" typeId="7921-831d-f13f-9469" value="0.0"/>
+        <cost name="Punkty walki wywiadowczej" typeId="9f0c-d0a4-ea60-16c3" value="0.0"/>
+        <cost name="Punkty dowodzenia" typeId="eb58-26dd-90a1-c631" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="689b-0f8c-3844-fb43" name="xDDD" publicationId="1df9-7d0b-7797-72fe" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="e47d-2006-651d-9110" name="Piechota" hidden="false" targetId="92a3-aea5-46f9-1d72" primary="false"/>
+        <categoryLink id="f4f2-42cd-e13c-49f4" name="Pluton" hidden="false" targetId="8d5a-fe3c-7dbd-7ec1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="df2a-e9cd-69a5-87e2" name="Drużyna Piechota" hidden="false" collective="false" import="true" targetId="1c0b-36d4-e974-36d7" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="ptk" typeId="7921-831d-f13f-9469" value="10.0"/>
+        <cost name="Punkty walki wywiadowczej" typeId="9f0c-d0a4-ea60-16c3" value="0.0"/>
+        <cost name="Punkty dowodzenia" typeId="eb58-26dd-90a1-c631" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="b0ea-703c-7ca6-5349" name="Broń Ciężka" publicationId="fcb5-521d-979f-2f8f" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="213f-4066-e9ba-a415" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="e625-b308-c8b0-8edf" name="Broń Ciężka" hidden="false">
+          <description>Jeśli piechota dokupuje broń ciężką to dodaje ją do broni sekcji.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="6da2-6180-addb-3903" name="Ciężkie działo laserowe" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="d0b2-8451-5ad0-2066" name="Ciężki" hidden="false" targetId="c961-cd09-755a-e35b" type="rule"/>
+            <infoLink id="49a7-d876-2915-9385" name="Ciężkie działo laserowe(pełna moc)" hidden="false" targetId="39e8-2c8a-e9ef-9030" type="profile"/>
+            <infoLink id="663f-19c4-e5f8-4f25" name="Ciężkie działo laserowe(pełna szybkostrzelność)" hidden="false" targetId="c840-beb0-2312-9db4" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="ptk" typeId="7921-831d-f13f-9469" value="30.0"/>
+            <cost name="Punkty walki wywiadowczej" typeId="9f0c-d0a4-ea60-16c3" value="0.0"/>
+            <cost name="Punkty dowodzenia" typeId="eb58-26dd-90a1-c631" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0a50-6f28-3ebc-23df" name="WKM &quot;Thunder" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="9993-ab0b-f664-754b" name="Dodatkowa siła ognia" hidden="false" targetId="2937-2144-f823-b6bb" type="rule"/>
+            <infoLink id="7c6f-d40b-2645-2228" name="Ciężki" hidden="false" targetId="c961-cd09-755a-e35b" type="rule"/>
+            <infoLink id="ac86-90d6-3fbe-73ea" name="WKM &quot;thunder&quot; (HE)" hidden="false" targetId="641b-23e5-3b4e-f030" type="profile"/>
+            <infoLink id="6681-671c-70ab-2fc6" name="WKM &quot;thunder&quot; (ppanc)" hidden="false" targetId="bd4f-9730-b165-f6e0" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="ptk" typeId="7921-831d-f13f-9469" value="20.0"/>
+            <cost name="Punkty walki wywiadowczej" typeId="9f0c-d0a4-ea60-16c3" value="0.0"/>
+            <cost name="Punkty dowodzenia" typeId="eb58-26dd-90a1-c631" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="1c0b-36d4-e974-36d7" name="Drużyna Piechoty" publicationId="1df9-7d0b-7797-72fe" hidden="false" collective="false" import="true" defaultSelectionEntryId="5b73-77d4-bafa-f439">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ab2-553d-d043-dc5d" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3f1-b686-3da0-b90a" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="e888-7edb-c908-4dd2" name="dowódca drużyny" hidden="false" targetId="660e-30e4-0196-d40e" type="rule"/>
+        <infoLink id="a065-b331-71e3-62fb" name="Sierżant pancernych" hidden="false" targetId="ab0c-ee86-496d-dc2f" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="5b73-77d4-bafa-f439" name="Drużyna liniowa" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1052-fced-60e7-829b" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8f3b-45f1-198f-3dbd" name="Karabinek &quot;Thunder&quot;" hidden="false" targetId="6680-8a53-f88b-526a" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="a0d3-4297-e082-7e91" name="Drużyna" hidden="false" targetId="63b7-33a2-746e-b1ee" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="7119-1249-0589-a53f" name="Sekcja pancernych" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0636-98c4-88f7-62ad" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4340-90c0-3bbe-e58b" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="92eb-7252-af3a-5745" name="Pancerny" hidden="false" targetId="ae2a-3684-30f2-078b" type="profile"/>
+                <infoLink id="16e2-37a2-12f9-22f8" name="Karabinek &quot;Thunder&quot;" hidden="false" targetId="6680-8a53-f88b-526a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Punkty walki wywiadowczej" typeId="9f0c-d0a4-ea60-16c3" value="0.0"/>
+                <cost name="Punkty dowodzenia" typeId="eb58-26dd-90a1-c631" value="0.0"/>
+                <cost name="ptk" typeId="7921-831d-f13f-9469" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="fc8b-8090-7b08-416e" name="Broń Ciężka" hidden="false" collective="false" import="true" targetId="b0ea-703c-7ca6-5349" type="selectionEntryGroup"/>
+            <entryLink id="80ee-b35c-6046-d16d" name="Broń Specjalna" hidden="false" collective="false" import="true" targetId="0680-4b67-3040-6c45" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="ptk" typeId="7921-831d-f13f-9469" value="240.0"/>
+            <cost name="Punkty walki wywiadowczej" typeId="9f0c-d0a4-ea60-16c3" value="0.0"/>
+            <cost name="Punkty dowodzenia" typeId="eb58-26dd-90a1-c631" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3b4e-033a-2147-b077" name="Drużyna strzelecka" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5634-34f9-40b9-afd1" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="501b-c486-89b4-6eff" name="Drużyna" hidden="false" targetId="63b7-33a2-746e-b1ee" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="9a1d-daf8-2e39-a02d" name="Sekcja pancernych" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5af-f350-fefc-9303" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8682-5829-d519-df5d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="dad4-a453-5649-13c5" name="Pancerny" hidden="false" targetId="ae2a-3684-30f2-078b" type="profile"/>
+                <infoLink id="897b-73be-54f3-7c89" name="Karabinek &quot;Thunder&quot;" hidden="false" targetId="6680-8a53-f88b-526a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Punkty walki wywiadowczej" typeId="9f0c-d0a4-ea60-16c3" value="0.0"/>
+                <cost name="Punkty dowodzenia" typeId="eb58-26dd-90a1-c631" value="0.0"/>
+                <cost name="ptk" typeId="7921-831d-f13f-9469" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="ptk" typeId="7921-831d-f13f-9469" value="240.0"/>
+            <cost name="Punkty walki wywiadowczej" typeId="9f0c-d0a4-ea60-16c3" value="0.0"/>
+            <cost name="Punkty dowodzenia" typeId="eb58-26dd-90a1-c631" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="0680-4b67-3040-6c45" name="Broń Specjalna" publicationId="fcb5-521d-979f-2f8f" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64c6-ce7f-ed0a-a6bd" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="4ff4-515b-f374-3369" name="Broń Specjalna" hidden="false">
+          <description>Wszystkie jednostki w sekcji wymieniają karabinki &quot;Thunder&quot;na broń specjalną.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="ad77-d8a4-10e4-9da6" name="Karabin Termiczny" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="2202-ebef-82fe-ad59" name="ppanz" hidden="false" targetId="08d2-b66d-b157-3639" type="rule"/>
+            <infoLink id="3546-e51f-ad1e-2fba" name="Karabin termiczny" hidden="false" targetId="6f67-0c4b-0096-d1ea" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="ptk" typeId="7921-831d-f13f-9469" value="30.0"/>
+            <cost name="Punkty walki wywiadowczej" typeId="9f0c-d0a4-ea60-16c3" value="0.0"/>
+            <cost name="Punkty dowodzenia" typeId="eb58-26dd-90a1-c631" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="eaf2-7a05-e3d9-210c" name="Karabin plazmowy" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="b758-1dc9-9347-590f" name="Karabin plazmowy" hidden="false" targetId="6f67-0c4b-0096-d1ea" type="profile"/>
+            <infoLink id="4114-a329-b3b3-55fe" name="Nieporęczny" hidden="false" targetId="c961-cd09-755a-e35b" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="ptk" typeId="7921-831d-f13f-9469" value="40.0"/>
+            <cost name="Punkty walki wywiadowczej" typeId="9f0c-d0a4-ea60-16c3" value="0.0"/>
+            <cost name="Punkty dowodzenia" typeId="eb58-26dd-90a1-c631" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="c961-cd09-755a-e35b" name="Nieporęczny" hidden="false">
+      <description>Jeśli się ruszyłeś, odejmij 3 od testu trafienia.</description>
+    </rule>
+    <rule id="2937-2144-f823-b6bb" name="Dodatkowa siła ognia" hidden="false">
+      <description>Jeśli strzelasz z jednostki wyposażonej w karabinki,  to możesz dodać 3 kości ataku podczas strzelania całemu oddziałowi, zadajesz dodatkowy Pin, oraz rezygnujesz z oddzielnego strzelania.</description>
+    </rule>
+    <rule id="ab0c-ee86-496d-dc2f" name="Sierżant pancernych" hidden="false">
+      <description>Dowódca drużyny. Może wydawać rozkazy. Możesz dodać broń do walki wręcz dowódcy, miecz jest w cenie. Wymień model w sekcji na sierżanta. Jeśli korzysta z komputera bitewnego, to podległe mu jednostki w 3&quot; również podlegają premii, ale nie mogą same namierzać. Zwiększa inicjatywę jednostki do której dołącza o 1.</description>
+    </rule>
+    <rule id="08d2-b66d-b157-3639" name="ppanz" publicationId="fcb5-521d-979f-2f8f" hidden="false">
+      <description>Zawsze penetracja zmniejsza pancerz, niezależnie od pancerza celu.</description>
+    </rule>
+    <rule id="0335-d435-79ad-6797" name="Ciężki" hidden="false">
+      <description>po ruchu, oraz podczas ognia osłonowego trafia tylko na trafieniach krytycznych.
+</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="120c-283c-41f4-d9f4" name="APC &quot;cegła&quot;" hidden="false" typeId="f778-6de7-6624-69e8" typeName="Pojazd">
+      <characteristics>
+        <characteristic name="Celność" typeId="91da-adbc-34aa-6639">3+</characteristic>
+        <characteristic name="Unik" typeId="4779-afb2-d262-ba54">0</characteristic>
+        <characteristic name="Pancerz" typeId="f17c-71dd-2ad0-47ba">9</characteristic>
+        <characteristic name="Osłona" typeId="a678-ae2e-56cf-aef6"/>
+        <characteristic name="Inicjatywa" typeId="10f0-b631-8067-e744">5</characteristic>
+        <characteristic name="Uzbrojenie" typeId="0c4b-c7d2-abfb-32e3">brak</characteristic>
+        <characteristic name="Zasady specjalne" typeId="afed-2b7a-c84f-e6c9">Radar, pojemność transportowa 10, punkty ogniowe 1, pęd 6&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ae2a-3684-30f2-078b" name="Pancerny" hidden="false" typeId="ca7e-8465-ce27-9076" typeName="Piechota bez osłony">
+      <characteristics>
+        <characteristic name="Liczebność" typeId="7535-c935-1a20-689d">3</characteristic>
+        <characteristic name="Celność" typeId="cdd0-8e6c-be69-16b2">3+</characteristic>
+        <characteristic name="Unik" typeId="5cfb-b67a-e89d-70b4">2</characteristic>
+        <characteristic name="Walka w zwarciu" typeId="6d86-ab2d-5fe3-1a21">3+</characteristic>
+        <characteristic name="Żywotność" typeId="8ffa-c3bd-30a9-83ff">3</characteristic>
+        <characteristic name="Pancerz" typeId="b464-b63d-e84e-2c6f">2</characteristic>
+        <characteristic name="Inicjatywa" typeId="4b8f-e171-e0ca-9322">7</characteristic>
+        <characteristic name="Uzbrojenie" typeId="049d-6576-b50b-6499">Thunder</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bade-1276-815a-2e61" name="Karabinek &quot;Czyściciel&quot;" publicationId="fcb5-521d-979f-2f8f" hidden="false" typeId="7c77-8b23-7b1b-1a2a" typeName="Broń strzelecka">
+      <characteristics>
+        <characteristic name="Szybkostrzelność" typeId="ea71-7914-af0e-b25c">4</characteristic>
+        <characteristic name="Zasięg" typeId="9bc3-d98e-5f29-4db6">3</characteristic>
+        <characteristic name="Obrażenia" typeId="efab-1f23-eb01-c935">3</characteristic>
+        <characteristic name="Penetracja" typeId="166b-e0bd-eab7-463d">1</characteristic>
+        <characteristic name="Zasady specjalne" typeId="cf8b-1465-4f9b-f728"/>
+      </characteristics>
+    </profile>
+    <profile id="641b-23e5-3b4e-f030" name="WKM &quot;thunder&quot; (HE)" hidden="false" typeId="7c77-8b23-7b1b-1a2a" typeName="Broń strzelecka">
+      <characteristics>
+        <characteristic name="Szybkostrzelność" typeId="ea71-7914-af0e-b25c">3</characteristic>
+        <characteristic name="Zasięg" typeId="9bc3-d98e-5f29-4db6">4</characteristic>
+        <characteristic name="Obrażenia" typeId="efab-1f23-eb01-c935">4</characteristic>
+        <characteristic name="Penetracja" typeId="166b-e0bd-eab7-463d">1</characteristic>
+        <characteristic name="Zasady specjalne" typeId="cf8b-1465-4f9b-f728">Ciężki - po ruchu, oraz podczas ognia osłonowego trafia tylko na trafieniach krytycznych.
+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bd4f-9730-b165-f6e0" name="WKM &quot;thunder&quot; (ppanc)" hidden="false" typeId="7c77-8b23-7b1b-1a2a" typeName="Broń strzelecka">
+      <characteristics>
+        <characteristic name="Szybkostrzelność" typeId="ea71-7914-af0e-b25c">2</characteristic>
+        <characteristic name="Zasięg" typeId="9bc3-d98e-5f29-4db6">4</characteristic>
+        <characteristic name="Obrażenia" typeId="efab-1f23-eb01-c935">3</characteristic>
+        <characteristic name="Penetracja" typeId="166b-e0bd-eab7-463d">3+D3</characteristic>
+        <characteristic name="Zasady specjalne" typeId="cf8b-1465-4f9b-f728"/>
+      </characteristics>
+    </profile>
+    <profile id="39e8-2c8a-e9ef-9030" name="Ciężkie działo laserowe(pełna moc)" publicationId="1df9-7d0b-7797-72fe" hidden="false" typeId="7c77-8b23-7b1b-1a2a" typeName="Broń strzelecka">
+      <characteristics>
+        <characteristic name="Szybkostrzelność" typeId="ea71-7914-af0e-b25c">1</characteristic>
+        <characteristic name="Zasięg" typeId="9bc3-d98e-5f29-4db6">9</characteristic>
+        <characteristic name="Obrażenia" typeId="efab-1f23-eb01-c935">3</characteristic>
+        <characteristic name="Penetracja" typeId="166b-e0bd-eab7-463d">5 + D10</characteristic>
+        <characteristic name="Zasady specjalne" typeId="cf8b-1465-4f9b-f728">ciężki</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c840-beb0-2312-9db4" name="Ciężkie działo laserowe(pełna szybkostrzelność)" hidden="false" typeId="7c77-8b23-7b1b-1a2a" typeName="Broń strzelecka">
+      <characteristics>
+        <characteristic name="Szybkostrzelność" typeId="ea71-7914-af0e-b25c">3</characteristic>
+        <characteristic name="Zasięg" typeId="9bc3-d98e-5f29-4db6">9</characteristic>
+        <characteristic name="Obrażenia" typeId="efab-1f23-eb01-c935">2</characteristic>
+        <characteristic name="Penetracja" typeId="166b-e0bd-eab7-463d">2</characteristic>
+        <characteristic name="Zasady specjalne" typeId="cf8b-1465-4f9b-f728">ciężki</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6f67-0c4b-0096-d1ea" name="Karabin &quot;Thunder&quot;" hidden="false" typeId="7c77-8b23-7b1b-1a2a" typeName="Broń strzelecka">
+      <characteristics>
+        <characteristic name="Szybkostrzelność" typeId="ea71-7914-af0e-b25c">3</characteristic>
+        <characteristic name="Zasięg" typeId="9bc3-d98e-5f29-4db6">3</characteristic>
+        <characteristic name="Obrażenia" typeId="efab-1f23-eb01-c935">3</characteristic>
+        <characteristic name="Penetracja" typeId="166b-e0bd-eab7-463d">2</characteristic>
+        <characteristic name="Zasady specjalne" typeId="cf8b-1465-4f9b-f728">Nieporęczny</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f5fa-b274-975f-5d16" name="Karabin termiczny" hidden="false" typeId="7c77-8b23-7b1b-1a2a" typeName="Broń strzelecka">
+      <characteristics>
+        <characteristic name="Szybkostrzelność" typeId="ea71-7914-af0e-b25c">2</characteristic>
+        <characteristic name="Zasięg" typeId="9bc3-d98e-5f29-4db6">1</characteristic>
+        <characteristic name="Obrażenia" typeId="efab-1f23-eb01-c935">D6</characteristic>
+        <characteristic name="Penetracja" typeId="166b-e0bd-eab7-463d">2D6</characteristic>
+        <characteristic name="Zasady specjalne" typeId="cf8b-1465-4f9b-f728">ppanz</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fd2c-cd4d-7458-4894" name="Karabin plazmowy" hidden="false" typeId="7c77-8b23-7b1b-1a2a" typeName="Broń strzelecka">
+      <characteristics>
+        <characteristic name="Szybkostrzelność" typeId="ea71-7914-af0e-b25c">3</characteristic>
+        <characteristic name="Zasięg" typeId="9bc3-d98e-5f29-4db6">2</characteristic>
+        <characteristic name="Obrażenia" typeId="efab-1f23-eb01-c935">3</characteristic>
+        <characteristic name="Penetracja" typeId="166b-e0bd-eab7-463d">3</characteristic>
+        <characteristic name="Zasady specjalne" typeId="cf8b-1465-4f9b-f728">Nieporęczny</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup id="3828-6e09-a30b-e892" name="Kompania" publicationId="fcb5-521d-979f-2f8f" hidden="false"/>
+  </sharedInfoGroups>
+</catalogue>

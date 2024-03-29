@@ -84,7 +84,11 @@ types_to_read = {
          "koszt",],
         ["nazwa",
          "efekt",
-         "Efekt",]],
+         "koszt",],
+        ["nazwa",
+         "efekt",
+         "punkty walki wywiadowczej",]
+    ],
 
     "rozkazy": [["nazwa",
                 "koszt punktów dowodzenia",
@@ -102,7 +106,7 @@ types_to_read = {
 }
 
 
-# najpierw sprawdzić ile tam kurwa tego w tym jest
+# najpierw sprawdzić ile tam tego w tym jest
 
 #potem na tej zasadzie sprawdzić czy len odpowiada.
 
@@ -122,46 +126,115 @@ multiple_entry_type = []
 potential_selection_entry = ""
 # TODO Jednostki
 units_as_dicts = {}
+
 data_loaded_to_BS = {}
-units_loaded = excel_loader_from_file.units
-rules_in_excel = excel_loader_from_file.rules
+
+#units_loaded = excel_loader_from_file.units
+#rules_in_excel = excel_loader_from_file.rules
 row=1
 column=0
 
-def flatten_multiple_types(keys, main_dictionary):
-    flatted_data = []
-    for key in keys:
-        for list_to_take in main_dictionary[key]:
-            flatted_data.append(list_to_take)
-    return flatted_data
+class LoadData:
+
+    def __init__(self, workbook_rules, workbook_units, workbook_guns, workbook_formations, types_of_records):
+        self.workbook_rules = workbook_rules
+        self.workbook_guns = workbook_guns
+        self.workbook_units = workbook_units
+        self.workbook_formations = workbook_formations
+        self.loaded_data = {}
+        self.types_of_records = types_of_records
 
 
-def load_to_data_rules_and_orders(worksheet_opened, posible_entry_types, types_to_enrich):
-    row = 1
-    column = 0
-    potential_types = flatten_multiple_types(posible_entry_types, types_to_read)
+    def load_all_data(self):
+        self.loaded_data = {}
+        self.load_to_data_rules_and_orders(self.workbook_rules, ["rozkazy", "zasady"],[])
 
-    while True:
-        column +=1
-        if worksheet_opened.cell(row=row, column=column).value == "":
-            if worksheet_opened.cell(row=row, column=column+1).value == "":
-                break                               #point of exit
+    def flatten_multiple_types(self, keys, main_dictionary):
+        flatted_data = []
+        for key in keys:
+            for list_to_take in main_dictionary[key]:
+                flatted_data.append(list_to_take)
+        return flatted_data
+
+    def select_entry_types(self, types_of_entry):
+        to_return = []
+        for type_of_entry in types_of_entry:
+            to_return.append(self.types_to_read[type_of_entry])
+        return to_return
+
+    def set_a_type(self, workbook, entry_types, row):
+        final_entry_type = []
+        column = 1
+        for entry_type in entry_types:
+            for type_of_data in self.types_of_records.keys():
+                if entry_type != type_of_data:
+                    continue
+                for final_lists in self.types_of_records[entry_type]:
+                    for direct_type in final_lists:
+                        if direct_type == "nazwa":
+                            final_entry_type.append("nazwa")
+                            final_entry_type.append({"grupa": workbook.cell(row=row, column=column)})
+                            column+=1
+                        elif direct_type == workbook.cell(row=row, column=column):
+                            final_entry_type.append(entry_type)
+                            column +=1
+                        else:
+                            final_entry_type = []
+                            column= 1
+                if final_entry_type !=[]:
+                    #final_entry_type.append(key)
+                    final_entry_type.append("id")
+                    final_entry_type = {type_of_data: final_entry_type}
+        return final_entry_type             #{"type" : [x,D,id]}
+
+    def load_a_record(self, worksheet_opened, type, row):
+        loaded_record = {}
+        for key in type.keys():
+            for i in range(0, len(type[key])):
+                if type[i] == "id":
+                    pass
+                else:
+                    loaded_record.update({type[i]: worksheet_opened.cell(row=row, column=i+1).value})
+            loaded_record = {key: loaded_record}
+        return loaded_record
+
+    def load_to_data_rules_and_orders(self, worksheet_opened, posible_entry_types, types_to_enrich):
+        row = 0
+        column = 1
+        x = []
+        #potential_types = self.flatten_multiple_types(posible_entry_types, types_to_read)
+        type_of_record = []
+        while True:
+            row +=1
+            shit = worksheet_opened.cell(row=row, column=column).value
+            print(worksheet_opened.cell(row=row, column=column))
+            if worksheet_opened.cell(row=row, column=column).value == None:
+                shit_gorszy = worksheet_opened.cell(row=row+1, column=column).value
+                if worksheet_opened.cell(row=row+1, column=column).value == None:
+                    break                               #point of exit
+                else:
+                    type_of_record = self.set_a_type(self.workbook_rules, posible_entry_types, column)
+
             else:
-                column += 1
-        #   need to set a header -- need to rethink how to make multiple type entries -- need to rethink how to provide
-        for type in potential_types:                #TODO
-            for header in potential_types:
-                if header.lower == "nazwa":
-                    potential_selection_entry = header.lower
-                    row += 1
+                x = self.load_a_record(worksheet_opened, type_of_record, row)
+                print(x)
+                row += 1
+            #   need to set a header -- need to rethink how to make multiple type entries -- need to rethink how to provide
+            #for type in potential_types:                #TODO
+            #    for header in potential_types:
+            #        if header.lower == "nazwa":
+            #            potential_selection_entry = header.lower
+            #            row += 1
 
-        row = 1
+            column = 1
 
-    pass
-
-load_to_data_rules_and_orders(rules_in_excel, ["rozkazy", "zasady"])
+        pass
 
 
+#load_to_data_rules_and_orders(rules_in_excel, ["rozkazy", "zasady"])
+rules_in_excel = excel_loader_from_file.rules
+data = LoadData(rules_in_excel,[],[],[],types_to_read)
+data.load_all_data()
 #while True:
 #    column +=1
 #    if units_loaded.cell(row=row, column=column).value == "":
